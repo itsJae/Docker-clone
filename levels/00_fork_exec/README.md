@@ -28,6 +28,7 @@ Finally, the parent must invoke the *wait()* call (or any of it's variants), in 
 ### Example
 
 ```python
+    linux.mount('proc', os.path.join('/', 'proc'), 'proc', 0, '')
 pid = os.fork()
 if pid == 0:
     # This is the child
